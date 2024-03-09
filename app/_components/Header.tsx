@@ -1,3 +1,5 @@
+import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
+
 function Header() {
   return (
     <header className="bg-black">
@@ -78,14 +80,14 @@ function Header() {
                 className="block rounded-md  px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-700"
                 href="#"
               >
-                Login
+                <LoginLink>Login</LoginLink>
               </a>
 
               <a
                 className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-black transition hover:text-slate-400 sm:block"
                 href="#"
               >
-                Register
+                <RegisterLink>Register</RegisterLink>
               </a>
             </div>
 
